@@ -94,7 +94,7 @@ const genreN=[
 
 const app=express();
 app.set('view engine',"ejs");
-app.use(express.static(__dirname+"/public"));
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({
     extended:true
 }));
@@ -122,7 +122,7 @@ const contactUsSchema=new mongoose.Schema({
 const contactUs=new mongoose.model("contactUs",contactUsSchema);
 
 app.get("/",function(req,res){
-    res.render(__dirname+"\home");
+    res.render("home");
 })
 
 app.get("/secrets",function(req,res){
