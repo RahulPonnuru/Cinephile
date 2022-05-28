@@ -94,12 +94,12 @@ const genreN=[
 
 const app=express();
 app.set('view engine',"ejs");
-app.use(express.static("public"));
+app.use(express.static(__dirname+"\public"));
 app.use(bodyParser.urlencoded({
     extended:true
 }));
 
-mongoose.connect("mongodb+srv://sairahul:95mBlwxMqnLckYiV@cluster0.8ukp5.mongodb.net/movieDB?retryWrites=true",{useNewUrlParser:true});
+mongoose.connect("mongodb+srv://sairahul:95mBlwxMqnLckYiV@cluster0.8ukp5.mongodb.net/movieDB",{useNewUrlParser:true});
 
 //for the signup page
 const movieSchema=new mongoose.Schema({
