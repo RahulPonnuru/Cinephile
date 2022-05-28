@@ -122,7 +122,7 @@ const contactUsSchema=new mongoose.Schema({
 const contactUs=new mongoose.model("contactUs",contactUsSchema);
 
 app.get("/",function(req,res){
-    res.render("home");
+    res.render(__dirname+"\home");
 })
 
 app.get("/secrets",function(req,res){
