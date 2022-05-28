@@ -1,0 +1,351 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand{
+    padding-left: 30px;
+}
+
+li{
+    padding-left: 5px;
+}
+
+/* .navbar{
+    position: relative;
+    top: 8px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+}
+
+li a:hover{
+    color: gold;
+}
+
+.nav{
+    background-color: black;
+    border: 2px solid white;
+} */
+
+.buttons button:hover{
+    color: white;
+    background-color: black;
+}
+
+.buttons button{
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0 10px;
+    padding: 3px;
+}
+
+.top{
+    height: 370px;
+    background-color: black;
+    border: 4px solid white;
+}
+
+
+.button1{
+    padding: 8px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.button1:hover{
+    background-color: black;
+    color: white;
+}
+
+.poster{
+    height: 200px;
+    width: 250px;
+}
+
+.blocks{
+    display: flex;
+}
+
+.OurFeatures{
+    background-color: black;
+    border: 4px solid white;
+}
+
+.first{
+    border: 2px solid white;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.title{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.contact{
+    background-color: black;
+    padding: 20px 40px;
+    border: 4px solid white;
+}
+
+.gif1{
+    border: 6px double black;
+}
+
+input{
+    padding: 5px;
+    border: 6px double black;
+    border-radius: 5px;
+    width: 60%;
+}
+
+textarea{
+    padding: 5px;
+    border: 6px double black;
+    width: 60%;
+    border-radius: 5px;
+}
+
+.second{
+    float: right;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    right: 55px;
+}
+
+.gif{
+    border: 6px double white;
+}
+
+.inp{
+    margin: 8px;
+}
+
+.sub{
+    position: relative;
+    left: 325px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.sub:hover{
+    background-color: black;
+    border: 2px solid white;
+}
+
+.heading{
+    margin: 10px 0px;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+.sign{
+    text-decoration: none;
+    color: black;
+}
+
+.sign:hover{
+    color: white;
+}
+
+.sub:hover{
+    color: white;
+    border: 2px solid white;
+}
+
+@media (min-width: 1191px){
+    /* li{
+        display: inline;
+        padding-left: 30px;
+    }
+    ul{
+        display: inline;
+        margin-left: 220px; 
+        margin-top: 20px;
+        list-style: none;
+    } */
+    .image{
+        width: 85px;
+        height: 40px;
+        padding: 5px;
+    }
+    .buttons button{
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 3px;
+    }
+    .buttons{
+        position: relative;
+        left: 220px;
+        top: 15px;
+    }
+    .content{
+        position: relative;
+        top: 100px;
+        text-align: center;
+        color: white;
+        margin: 0px 100px;
+    }
+}
+
+@media (min-width: 859px) and (max-width:1191px){
+    /* li{
+        display: inline;
+        padding-left: 15px;
+    }
+    ul{
+        display: inline;
+        margin-left: 100px; 
+        margin-top: 20px;
+        list-style: none;
+    } */
+    .image{
+        width: 120px;
+        height: 60px;
+        padding: 5px;
+    }
+    .buttons{
+        margin-left: 100px;
+        top: 15px;
+        position: relative;
+    }
+    .content{
+        position: relative;
+        top: 100px;
+        text-align: center;
+        color: white;
+        margin: 0px 100px;
+    }
+    .second{
+        display: none;
+    }
+    .contact{
+        text-align: center;
+    }
+    .sub{
+        position: relative;
+        left: 25px;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width:858px) and (min-width: 600px) {
+    /* ul{
+        margin-left: 100px; 
+        margin-top: 20px;
+        list-style: none;
+    } */
+    .image{
+        width: 120px;
+        height: 60px;
+        padding: 5px;
+    }
+    .buttons{
+        margin-left: 100px;
+        top: 15px;
+        position: relative;
+    }
+    .blocks{
+        display: block;
+    }
+    .content{
+        position: relative;
+        top: 80px;
+        text-align: center;
+        color: white;
+        margin: 0px 100px;
+    }
+    .second{
+        display: none;
+    }
+    .contact{
+        text-align: center;
+    }
+    .sub{
+        position: relative;
+        left: 15px;
+        border-radius: 10px;
+    }
+    
+}
+
+@media (max-width:600px) {
+    /* ul{
+        display: block;
+        list-style: none;
+    } */
+    .image{
+        width: 100px;
+        height: 50px;
+        padding: 5px;
+        display: block;
+        position: relative;
+    }
+    .buttons{
+        position: absolute;
+        left: 260px;
+        top: 20px;
+    }
+    .buttons button{
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+        margin: 0 5px;
+        margin-bottom: 10px;
+    }
+    .blocks{
+        display: block;
+    }
+    .content{
+        color: white;
+        text-align: center;
+        /* margin-top: 60px; */
+        margin: 60px 10px 0px 10px;
+    }
+    .second{
+        display: none;
+    }
+    .contact{
+        text-align: center;
+    }
+    .sub{
+        position: relative;
+        left: 15px;
+        border-radius: 10px;
+    }
+    input{
+        padding: 5px;
+        border: 6px double black;
+        border-radius: 5px;
+        width: 80%;
+    }
+    textarea{
+        padding: 5px;
+        border: 6px double black;
+        width: 80%;
+        border-radius: 5px;
+    }
+}

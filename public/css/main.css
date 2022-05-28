@@ -1,0 +1,590 @@
+body{
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: white;
+}
+
+.nav{
+    background-color: black;
+    border: 2px solid white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    position: absolute;
+    display: inline;
+    list-style: none;
+    left: 75%;
+}
+
+.homeButton{
+    border: 2px solid white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.homeButton a:hover{
+    color: black;
+}
+
+.homeButton:hover{
+    border: 2px solid black;
+    background-color: white;
+}
+
+.title{
+    color: white;
+    margin: 0;
+    padding: 40px 60px 0px 60px;
+    font-size: 40px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.content{
+    color: white;
+    font-size: 20px;
+    padding: 10px 60px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.tit{
+    color: #F66B0E;
+}
+
+.navLi{
+    display: inline;
+}
+
+nav ul{
+    list-style: none; 
+}
+
+.image{
+    height: 50px;
+    width: 120px;
+}
+
+.top{
+    background-color: #112B3C;
+    border: 2px solid white;
+}
+
+.search{
+    width: 80%;
+    padding: 10px;
+    border: 2px solid black;
+    background-color: white;
+    margin: 5px 20px 20px 70px;
+    text-align: center;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+.search:focus{
+    outline: 0;
+    background-color: #f3bd99;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 2px solid white;
+}
+
+.movie{
+    width: 300px;
+    color: white;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0.2px 4px 5px white;
+    background-color: #64727b;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.movie-info h1{
+    margin-top: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.movie img{
+    width: 100%;
+}
+
+.movie-info span{
+    background-color: #112B3C;
+    padding: 0.25rem 0.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.movie-info span.green{
+    color: lightgreen;
+}
+
+.movie-info .orange{
+    color: orange;
+}
+
+.movie-info span.red{
+    color: red;
+}
+
+.overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    background-color: #112B3C;
+    font-family: 'DM Sans', sans-serif;
+    max-height: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview{
+    transform: translateY(0);
+}
+
+#topic{
+    text-align: center;
+    color: white;
+}
+
+.title1{
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+button {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+}
+
+button:hover{
+    background-color: #f3bd99;
+    color: black;
+    border: 2px solid black;
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.bt{
+    border: none;
+    margin-right: 10px;
+}
+
+.bt:hover{
+    background: none;
+    color: gold;
+    width: 5%;
+}
+
+.heading{
+    display: flex;
+    justify-content: center;
+}
+
+.title1{
+    border: 2px solid white;
+}
+
+.know-more{
+    background-color: orange;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: 0;
+    margin-top: 5px;
+    padding: 10px 20px;
+}
+
+/*Copied from W3 schools for youtubevideo*/
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 5%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+.embed.hide{
+    display: none;
+}
+
+.embed.show{
+    display: inline-block;
+}
+
+.arrow{
+    position: absolute;
+
+}
+
+.arrow.left-arrow{
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+}
+
+.arrow.right-arrow{
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+
+.dots{
+    margin: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+.dots .dot {
+    padding: 5px 10px;
+    border-radius: 50%;
+    border: 3px solid white;
+    color: white;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.dots .dot.active{
+    border-color:orange;
+}
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+@media (min-width: 667px) and (max-width:1000px){
+    .serachButton{
+        margin: 20px 45%;
+    }
+    ul{
+        position: absolute;
+        display: inline;
+        list-style: none;
+        left: 63%;
+    }
+    iframe{
+        height: 300px;
+        width: 550px;
+    }
+}
+
+@media (min-width: 590px) and (max-width:667px){
+    .serachButton{
+        margin: 20px 45%;
+    }
+    .movie{
+        width: 200px;
+        color: white;
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0.2px 4px 5px white;
+        background-color: #64727b;
+        position: relative;
+        overflow: hidden;
+    }
+    .overview p{
+        font-size: 12px;
+    }
+    .overview h1{
+        font-size: 20px;
+    }
+    ul{
+        position: absolute;
+        display: inline;
+        list-style: none;
+        left: 45%;
+    }
+    iframe{
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media (min-width: 489px) and (max-width:590px){
+    .title{
+        color: white;
+        margin: 5px 0px;
+        padding: 20px 30px;
+        text-align: center;
+        font-size: 40px;
+        font-family: 'Oleo Script Swash Caps', cursive;
+    }
+    .content{
+        color: white;
+        font-size: 20px;
+        padding: 0px 30px;
+        font-family: 'DM Sans', sans-serif;
+        text-align: center;
+    }
+    ul{
+        position: absolute;
+        display: inline;
+        list-style: none;
+        left: 50%;
+    }
+    
+    .homeButton{
+        border: 2px solid white;
+        background-color: black;
+        padding: 2px;
+        border-radius: 10px;
+    }
+    .movie{
+        width: 175px;
+        color: white;
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0.2px 4px 5px white;
+        background-color: #64727b;
+        position: relative;
+        overflow: hidden;
+    }
+    .overview p{
+        font-size: 8px;
+    }
+    .overview h1{
+        font-size: 15px;
+    }
+    .search{
+        width: 60%;
+        padding: 10px;
+        border: 2px solid black;
+        background-color: white;
+        margin: 5px 0px 22px 66px;
+        text-align: center;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+    .movieName{
+        font-size: 15px;
+    }
+    .average{
+        font-size: 10px;
+    }
+    iframe{
+        height: 250px;
+        width: 350px;
+    }
+}
+
+@media (min-width: 375px) and (max-width:489px){
+    .title{
+        color: white;
+        margin: 5px 0px;
+        padding: 20px 30px;
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Oleo Script Swash Caps', cursive;
+    }
+    .content{
+        color: white;
+        font-size: 20px;
+        padding: 0px 30px;
+        font-family: 'DM Sans', sans-serif;
+        text-align: center;
+    }
+    ul{
+        position: absolute;
+        display: inline;
+        list-style: none;
+        left: 40%;
+    }
+    
+    .homeButton{
+        border: 2px solid white;
+        background-color: black;
+        padding: 2px;
+        border-radius: 10px;
+    }
+    .movie{
+        width: 155px;
+        color: white;
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0.2px 4px 5px white;
+        background-color: #64727b;
+        position: relative;
+        overflow: hidden;
+    }
+    .overview p{
+        font-size: 10px;
+    }
+    .overview h1{
+        font-size: 12px;
+    }
+    .search{
+        width: 60%;
+        padding: 10px;
+        border: 2px solid black;
+        background-color: white;
+        margin: 5px 0px 22px 40px;
+        text-align: center;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+    .movieName{
+        font-size: 15px;
+    }
+    .average{
+        font-size: 10px;
+    }
+    #topic{
+        font-size: 24px;
+    }
+    iframe{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media (max-width:376px) {
+    .title{
+        color: white;
+        margin: 3px 0px;
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 35px;
+        font-family: 'Oleo Script Swash Caps', cursive;
+    }
+    .content{
+        color: white;
+        font-size: 18px;
+        padding: 0px 30px;
+        padding-bottom: 5px;
+        font-family: 'DM Sans', sans-serif;
+        text-align: center;
+    }
+    ul{
+        position: absolute;
+        display: inline;
+        list-style: none;
+        left: 35%;
+    }
+    
+    .homeButton{
+        border: 2px solid white;
+        background-color: black;
+        padding: 2px;
+        border-radius: 10px;
+    }
+    .movie{
+        width: 140px;
+        color: white;
+        margin: 1rem;
+        border-radius: 10px;
+        box-shadow: 0.2px 4px 5px white;
+        background-color: #64727b;
+        position: relative;
+        overflow: hidden;
+    }
+    .overview p{
+        font-size: 9px;
+    }
+    .overview h1{
+        font-size: 15px;
+    }
+    .search{
+        width: 60%;
+        padding: 10px;
+        border: 2px solid black;
+        background-color: white;
+        margin: 5px 0px 22px 28px;
+        text-align: center;
+        border-radius: 20px;
+        font-weight: bolder;
+    }
+    .movieName{
+        font-size: 15px;
+    }
+    .average{
+        font-size: 10px;
+    }
+    #topic{
+        font-size: 20px;
+    }
+    iframe{
+        height: 180px;
+        width: 270px;
+    }
+}

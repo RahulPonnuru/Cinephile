@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/list.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <div class="nav">
+            <img class="image" src="Images/Cinephile1.png" alt="Cinephile">
+            <div class="navLi">
+                <!-- <h1 class="tit"></h1> -->
+                <ul>
+                    <button class="homeButton"><a href="genre">Genres</a></button>
+                    <button class="homeButton"><a href="secrets">Home</a></button>
+                </ul>
+            </div>
+        </div>
+        <div class="top">
+            <h1 class="title">Welcome <span class="tit">
+                    these are some of mine recommendations.
+                </span></h1>
+            <p class="content">So these are some of mine favourite films which includes the movies of all geners. So you can select the movies of Hindi or Telugu languages.</p>
+            <div class="languages">
+                <button type="button" id="en" class="lan" onclick="showEnglish()">English</button>
+                <button type="button" id="hi" class="lan" onclick="showHindi()">Hindi</button>
+                <button type="button" id="te" class="lan" onclick="showTelugu()">Telugu</button>
+            </div>
+           
+        </div>
+        <div id="myNav" class="overlay"> //this myNav is taken from W3 schools for carosel of youtube video
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          
+            <!-- Overlay content -->
+            <div class="overlay-content" id="overlay-content"></div>
+            <!-- &#8658; this is html code for arraw -->
+            <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+            <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow">&#8658;</a>
+          
+          </div>
+          
+          <!-- Use any element to open/show the overlay navigation menu -->
+          <span onclick="openNav()">open</span>
+        <main id="main">
+            <div class="movie">
+
+            </div>
+        </main>
+    </div>
+    <script src="/recommend.js"></script>
+</body>
+</html>

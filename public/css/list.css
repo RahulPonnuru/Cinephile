@@ -1,0 +1,90 @@
+body{
+    background-color: black;
+    border: 2px solid white;
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    background-color: black;
+    border: 2px solid white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    position: absolute;
+    display: inline;
+    list-style: none;
+    left: 80%;
+}
+
+.homeButton{
+    border: 2px solid white;
+    background-color: black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.homeButton a:hover{
+    color: black;
+}
+
+.navLi{
+    display: inline;
+}
+
+nav ul{
+    list-style: none; 
+}
+
+.homeButton:hover{
+    border: 2px solid black;
+    background-color: white;
+}
+
+.image{
+    height: 50px;
+    width: 120px;
+}
+
+.languages{
+    margin: 20px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.lan{
+    color: black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(90deg, hsla(189, 75%, 55%, 1), hsla(289, 75%, 55%, 1));
+    background-size: 600%;   
+    margin: 5px;     
+    cursor: pointer;  
+    border: 2px solid black;
+}
+
+.lan:hover{
+    color: black;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    border: none;
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(90deg, hsla(259, 75%, 55%, 1), hsla(359, 75%, 55%, 1));
+    background-size: 600%;  
+    margin: 5px;     
+    border: 2px solid black;
+}
