@@ -1,6 +1,6 @@
-const API_KEY="api_key=61022532bb5ed4d2a4a36463a039e57f";
+const API_KEY="";
 const BASE_URL="https://api.themoviedb.org/3";
-const API_URL=BASE_URL+"/list/8203256?"+API_KEY;
+const API_URL=BASE_URL+"/list/820325?"+API_KEY;
 const main=document.getElementById('main');
 const IMG_URL="https://image.tmdb.org/t/p/w500";
 
