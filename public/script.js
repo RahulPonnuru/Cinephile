@@ -1,4 +1,4 @@
-const API_KEY="api_key=61022532bb5ed4d2a4a36463a039e57f";
+const API_KEY="";
 const BASE_URL="https://api.themoviedb.org/3";
 const API_URL=BASE_URL+'/discover/movie?'+API_KEY+"&page=1&region=IN";
 const SEARCH_URL="https://api.themoviedb.org/3/search/movie?"+API_KEY+"&query=" ;
