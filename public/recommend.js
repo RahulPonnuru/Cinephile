@@ -1,5 +1,5 @@
-// https://api.themoviedb.org/3/list/8202933?api_key=61022532bb5ed4d2a4a36463a039e57f
-const API_KEY="api_key=61022532bb5ed4d2a4a36463a039e57f";
+
+const API_KEY="";
 const BASE_URL="https://api.themoviedb.org/3";
 const API_URL_TELUGU=BASE_URL+'/list/8202933?'+API_KEY;
 const API_URL_HINDI=BASE_URL+'/list/8202940?'+API_KEY;
