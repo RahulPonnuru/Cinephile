@@ -5,7 +5,7 @@ const mongoose=require("mongoose");
 const ejs = require("ejs");
 const bcrypt=require("bcrypt");
 const saltRounds=10;
-const API_KEY="api_key=61022532bb5ed4d2a4a36463a039e57f";
+const API_KEY="api_key=*****";  //Enter your API Key
 const BASE_URL="https://api.themoviedb.org/3";
 const API_URL=BASE_URL+'/movie/now_playing?'+API_KEY+"&page=1&region=IN";
 const SEARCH_URL="https://api.themoviedb.org/3/search/movie?"+API_KEY+"&query=" ;
@@ -99,7 +99,7 @@ app.use(bodyParser.urlencoded({
     extended:true
 }));
 
-mongoose.connect("mongodb+srv://sairahul:95mBlwxMqnLckYiV@cluster0.8ukp5.mongodb.net/movieDB",{useNewUrlParser:true});
+mongoose.connect("mongodb://localhost:27017/movieDB",{useNewUrlParser:true});
 
 //for the signup page
 const movieSchema=new mongoose.Schema({
